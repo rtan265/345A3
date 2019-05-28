@@ -1,0 +1,328 @@
+html, 
+body {
+    height: 100%;
+}
+#h1element{
+    color: blue;
+}
+/*.todo li{
+    padding-bottom: 5%;
+    height: 100%;
+    list-style-type:none;
+  }
+.todo_part{
+  padding-right:!important;
+  padding-top: 5%;
+}*/
+.weekdays {
+    margin-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .weekdays li {
+    margin-bottom: 0%;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+  }
+  
+  .days {
+    /* padding: 10px 0; */
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #eee;
+    margin: 0;
+  }
+
+  .days li:hover{
+    border:1px solid #618ff4;
+  }
+
+  
+  .days li {
+    /* list-style-type: none; */
+    display: block;
+    width: 13.6%;
+    padding-bottom: 8.5%;
+    height: 100%;
+    text-align: center;
+    /* margin-bottom: 5px; */
+    font-size:20px;
+    color: #777;
+    border: 1px solid  #d3d3d3;
+    float:left;
+  }
+  .month{
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+    margin-left:2%; 
+    text-align: center;
+  }
+ /* #todo_list{
+    float: right;
+    width: 20%;
+    background-color:white;
+    border: 1px solid #d3d3d3;
+    height: 90.4vh;  
+  }*/
+  #calander{
+    float: left;
+    width: 80%;
+    /* height: 100%;       */
+    height:90.4vh;
+    margin-top: 10vh;
+  }
+
+
+
+/* THE MEDIA QUERY FOR SMALLER SCREENS AND LARGE SCREENS */
+
+/* Add media queries for smaller screens */
+
+ @media screen and (max-width:950px) {
+  .days p{ font-size:0.4em !important;}
+
+} 
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 13.1%;}
+  .days p{ font-size:5px;}
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px;}
+  .days p{ font-size:3px;}
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {width: 12.2%;}
+  .days p{ font-size:1px;}
+
+}
+
+
+
+
+
+
+
+
+
+  #click_here{
+    display:block;
+    height: 100%;
+    width:100%;
+  }
+
+
+
+
+  #overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+
+  #innerdiv{
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 400px;
+    height: 400px;
+    padding-left: 3%;
+    margin: auto;
+  }
+
+  input[type=text] {    
+    width: 300px; 
+}
+
+.ul_tag  li a:hover {
+  background-color: #111;
+}
+
+.start_date{
+  width:30px;
+}
+#innerdiv{
+  background-color: #eee; 
+  border:2px solid #0a0a0a;
+}
+
+.heading_div{
+  padding-left: 5px;
+  padding-right:5px;
+  padding-bottom: 2%;
+  border: 1px solid #d3d3d3;
+  background-color:#00aced; 
+}
+.days p{
+  color: black;
+  font-size: 0.6em;
+  margin-top:1.5em;
+  margin-bottom: -3.0em !important;
+  width:100%;
+  background-color: yellow;
+}
+/* The css @media lets you rezie the screen and wont break the div or the paragraph tags */
+
+
+
+
+/* The form styling */
+
+.container 		{ 
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-family:'Roboto';
+  height:80vh;
+  width:30vw !important; 
+  margin:auto; 
+  background-color: #f1f1f1;
+  padding:10px 50px 50px;
+  border: 2px solid #d3d3d3;;
+}
+.footer 	{ text-align:center; }
+.footer a  { color:#53B2C8; }
+
+/* form starting stylings ------------------------------- */
+form{
+  width: 20vw !important;
+}
+.group 			  { 
+  position:relative; 
+  margin-bottom:30px; 
+}
+input 				{
+  background-color: #f1f1f1;
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:inline;
+  width:100px;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+input:focus 		{ outline:none; }
+
+/* LABEL ======================================= */
+label 				 {
+  color:#999; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+.time_label{
+      background-color: #f1f1f1;
+  width:200px;
+  /* border: solid black 1px; */
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label		{
+  top:-5px;
+  font-size:12px;
+  color:#5264AE;
+  display:none;
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:300px; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#5264AE; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+  padding-bottom: 3px !important;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+
+.buttons {
+  margin-top: 0vh;
+  padding-top:0vh;
+  margin-right: 1vw;
+  float:left;
+  display: inline;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+.description{
+  border:solid #757575 1px;
+/*  margin-top: 0 !important;
+  padding-top: 0 !important;*/
+  width: 28vw !important;
+  height:10vh !important;
+}
+.group_to_hide{
+  display: none;
+}
+/* The form styling */

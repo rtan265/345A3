@@ -1,0 +1,22 @@
+input[type="file"] { 
+    z-index: -1;
+    position: absolute;
+    opacity: 0;
+  }
+.sqaure{
+    width:70vw;
+    height:50vh;
+    background-color: lightblue;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+}
+.upload_label{
+  width:10vw!important;
+  font-size: 30px;
+  position: fixed;
+  justify-content: center;
+}

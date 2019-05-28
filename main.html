@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<!-- Boostrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="main-styles.css">
+	<link rel="stylesheet" href="./css/home_page.css">
+	<link rel ="stylesheet" href="./css/bootstrap.min.css">
+	
+	<link rel="stylesheet" href="todo.css">
+
+	<script src = "./File_page/file_page.js"></script>
+	<script src="script.js"></script>
+
+	<title>Welcome to Group 31 Assignment!</title>
+
+</head>
+
+
+<body>
+	<ul class = "ul_tag" style="position: fixed;z-index:12">
+		<li><a class="active" href="./main.html"><img class = "home_icon" src="./home_page_icons/home_icon.svg">Home</a></li>
+		<li><a href="./File_page/file_page.html"><img class = "home_icon" src = "./home_page_icons/file_icon.svg">File</a></li>
+		<li><a href="#upload"><img class = "home_icon" src = "./home_page_icons/upload_icon.svg">Upload</a></li>
+		<li><a href="#idea"><img class = "home_icon" src = "./home_page_icons/idea_icon.svg">Ideas</a></li>
+		<li><a href="#chat"><img class = "home_icon" src = "./home_page_icons/chat_icon.svg">Chat</a></li>
+		<li><a href="#expectations"><img class = "home_icon" src = "./home_page_icons/expectations_icon.svg">Expectations</a></li>
+		<li><a href="./calender/compsci 361 caldendar page.html"><img class = "home_icon" src = "./home_page_icons/calendar_icon.svg">Calendar</a></li>
+		<li><a class ="active" href="#todo" onclick ="openNav()"><img class = "home_icon" src = "./home_page_icons/todo_icon.svg">To Do</a></li>
+	</ul>
+
+	<div id="chat" data-left="2vw" data-top="7vw" style="position: absolute; left:2vw; top:7vw">
+		<div id="chatheader"><h2>Chat</h2></div>
+		<div id="messages"></div>
+		<div id="sendmessage"><input id="text" style="width:90%; margin-top: 0.01vw;" type="text"> <button onclick="sendmsg()">Send</button></div>
+	</div>
+
+	<div id="files" data-left="51vw" data-top="7vw" style="position: absolute; left:51vw; top:7vw">
+		<div id="filesheader"><h2>Files</h2></div>
+		<span class="selectfolder" onclick="select()"><i class="fas fa-folder"><span class="foldername">Ryan</span></i></span>
+		<span class="selectfolder" onclick="select()"><i class="fas fa-folder"><span class="foldername">Mathew</span></i></span>
+		<span class="selectfolder" onclick="select()"><i class="fas fa-folder"><span class="foldername">Martin</span></i></span>
+		<span class="selectfolder" onclick="select()"><i class="fas fa-folder"><span class="foldername">Eric</span></i></span>
+		<span class="selectfolder" onclick="select()"><i class="fas fa-folder"><span class="foldername">Adam</span></i></span>
+	</div>
+
+	<div id="ideas" data-left="2vw" data-top="27vw" style="position: absolute; left:2vw; top:27vw">
+		<div id="ideasheader"><h2>Ideas</h2></div>
+		<div class="idea">
+			<span>Idea: Website Development</span><span><br><span id="up1">0</span><i style="font-size: 1vw; cursor:pointer" onclick="incrementup1()" class="far fa-thumbs-up"></i><span id="down1">0</span><i style="font-size: 1vw; cursor:pointer" onclick="incrementdown1()" class="far fa-thumbs-down"></i></span>
+		</div>
+		<div class="idea">
+			<span>Idea: Personal Assistant</span><span><br><span id="up2">0</span><i style="font-size: 1vw; cursor:pointer" onclick="incrementup2()" class="far fa-thumbs-up"></i><span id="down2">0</span><i style="font-size: 1vw; cursor:pointer" onclick="incrementdown2()" class="far fa-thumbs-down"></i></span>
+		</div>
+		<div class="idea">
+			<span>Idea: Social Media Marketing</span><span><br><span id="up3">0</span><i style="font-size: 1vw; cursor:pointer" onclick="incrementup3()" class="far fa-thumbs-up"></i><span id="down3">0</span><i style="font-size: 1vw; cursor:pointer" onclick="incrementdown3()" class="far fa-thumbs-down"></i></span>
+		</div>
+	</div>
+
+
+	<div id="calendar" data-left="26.5vw" data-top="27vw" style="position: absolute; left:26.5vw; top:27vw">
+		<div id="calendarheader"><h2>Calendar</h2></div>
+		<div class="schedule">8am - Meeting 2</div>
+		<div class="schedule">12pm - Lunch</div>
+		<div class="schedule">3:30pm - Complete Task 4</div>
+		<div class="schedule">4pm - Upload Files</div>
+		<div class="schedule">6pm - Home</div>
+	</div>
+
+	<div id="uploads" data-left="51vw" data-top="27vw" style="position: absolute; left:51vw; top:27vw">
+		<div id="uploadsheader"><h2>Uploads</h2></div>
+		<table>
+			<tr><td><div class="box green"></div><td><td style="text-align: left">Mathew<br>Uploaded - 15th March</td></tr>
+			<tr><td><div class="box green"></div><td><td style="text-align: left">Martin<br>Uploaded - 11th March</td></tr>
+			<tr><td><div class="box green"></div><td><td style="text-align: left">Ryan<br>Uploaded - 10th March</td></tr>
+			<tr><td><div class="box red"></div><td><td style="text-align: left">Adam<br><p></p></td></tr>
+			<tr><td><div class="box red"></div><td><td style="text-align: left">Eric<br><p></p></td></tr>
+		</table>
+	</div>
+	
+	<div id = "todo_list">
+		<div class = "heading_div">
+			<h4 class = "todo_heading" href =#todopage>To Do</h4>
+		</div>
+		<div class = "todo_part">
+			<ul class = "todo">
+				<li>
+					<input style="width:12.8px" type="checkbox">
+					Meeting 10 May at 2:00PM
+				</li>
+				<li>
+					<input style="width:12.8px" type="checkbox">
+					Finish lofi 20 December at 5:30PM
+				</li>
+				<li>
+					<input style="width:12.8px" type="checkbox">
+					Finish hifi 4 September at 4:00PM
+				</li>
+				<li>
+					<input style="width:12.8px" type="checkbox">
+					Submit A2 11 December at 8:00PM
+				</li>
+				<li>
+					<input style="width:12.8px" type="checkbox">
+					Meeting 3 December at 2:00PM
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<script>
+		dragElement(document.getElementById("chat"));
+		dragElement(document.getElementById("files"));
+		dragElement(document.getElementById("ideas"));
+		dragElement(document.getElementById("calendar"));
+		dragElement(document.getElementById("uploads"));
+	</script>
+
+	<!-- SCRIPTS FOR JAVASCRIPT -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
+

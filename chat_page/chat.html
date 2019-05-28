@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width", initial-scale="1.0">
+<!-- Boostrap CSS -->
+<script src="upload.js"></script>
+<link rel="stylesheet" href="./upload.css">
+<link rel="stylesheet" href="../css/home_page.css">
+<link rel ="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../File_page/file_page.css">
+<link rel="stylesheet" href="../chat_page/chat.css">
+<script src = "../File_page/file_page.js"></script>
+<script src = "./chat.js"></script>
+    
+
+</head>
+
+<ul class = "ul_tag">
+        <li><a class="active" href="../main.html"><img class = "home_icon" src="../home_page_icons/home_icon.svg">Home</a></li>
+        <li><a href=#file><img class = "home_icon" src = "../home_page_icons/file_icon.svg">File</a></li>
+        <li><a href=#upload><img class = "home_icon" src = "../home_page_icons/upload_icon.svg">Upload</a></li>
+        <li><a href="#idea"><img class = "home_icon" src = "../home_page_icons/idea_icon.svg">Ideas</a></li>
+        <li><a href=#chat><img class = "home_icon" src = "../home_page_icons/chat_icon.svg">Chat</a></li>
+        <li><a href="#expectations"><img class = "home_icon" src = "../home_page_icons/expectations_icon.svg">Expectations</a></li>
+        <li><a href="../calender/compsci 361 caldendar page.html"><img class = "home_icon" src = "../home_page_icons/calendar_icon.svg">Calendar</a></li>
+        <li><a href="#todo" onclick ="openNav()"><img class = "home_icon" src = "../home_page_icons/todo_icon.svg">To Do</a></li>
+	</ul>
+
+    <div id="chat" data-left="2vw" data-top="7vw" style="position: absolute; left:2vw; top:7vw">
+        <div id="chatheader"><h2>CHAT</h2></div>
+        <div id="messages"></div>
+        <div id="sendmessage"><input id="text" style="width:90%; margin-top: 0.01vw;" type="text"> <button onclick="sendmsg()">Send</button><br><br><div style= float:left><button>emoji</button></div>&nbsp;&nbsp;<div style= float:left>&nbsp;&nbsp;&nbsp;&nbsp;<button>Like</button></div></div>
+        <label style = float:left>&nbsp;&nbsp;Anonymous:&nbsp;&nbsp;</label>
+        <label class="switch" style = float:left>
+            <input type="checkbox" checked>
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+
+
+
+
+<div id = "todo_list">
+<div class = "heading_div">
+    <h4><a class = "todo_heading" href =#todopage>To Do</a></h4>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+</div>
+<div class = "todo_part">
+    <ul class = "todo">
+        <li>
+            2pm: Meeting
+        </li>
+        <li>
+            Finish lofi
+        </li>
+        <li>
+            Finish hifi
+        </li>
+        <li>
+            8pm: Submit A2
+        </li>
+        <li>
+            2pm: Meeting
+        </li>
+    </ul>
+</div> 
+</div>
+
+</body>
+</html>

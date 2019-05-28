@@ -1,0 +1,239 @@
+h1 {
+  padding-top:0.5vw;
+  padding-left: 1vw;
+}
+h2 {
+  padding-top:0.5vw;
+  padding-left: 1vw;
+  padding-bottom: 0.5vw;
+  background-color: #2196F3;
+  color: #fff;
+  margin-bottom: 0 !important;
+}
+
+
+html, body {
+    min-height: 100%;
+  }
+/* .the_overall_div{
+    position: absolute;
+    margin-left:2px;
+    padding:1px;
+    background-color: lightgray;
+    top: 9.5%;
+    bottom: 0;
+    width: 20%;
+    border: solid black 2px; 
+  } */
+
+  .the_overall_div{
+    margin-top: 1.5vw;
+    margin-right: 0vw;
+    margin-left: 2vw;
+    float: left;
+    height: 83vh;
+    width: 20%;
+    border: solid #d3d3d3 1px; 
+    background-color: #f1f1f1;
+    
+    /*position: absolute;
+    float: left;
+    margin-left:2px;
+    padding:1px;
+    background-color: lightgray;
+    top: 9.5%;
+    height: 90.4vh;
+    width: 20%;
+    border: solid black 2px; */
+  }
+.left_section{
+  padding-bottom:0!important;
+}
+  .right_div{
+    margin-top: 1.5vw;
+    margin-left: 23vw;
+   /* float: right;*/
+    height: 83vh;
+    width: 50%;
+    border: solid #d3d3d3 1px;
+    background-color: #f1f1f1;
+    /*position: absolute;
+    float:right;
+    background-color: lightgray;
+    width: 80%;
+    top: 9.5%;
+    height: 90.4vh;
+    border: solid black 2px; 
+    margin-right: 0vw;*/
+  }
+
+.assignment_heading{
+    text-align: center;
+    border-top: solid #d3d3d3 1px;;
+  border-bottom: solid #d3d3d3 1px;
+}
+
+
+
+.square {
+    float:left;
+    margin-right: 20px;
+    margin-left: 4px;
+    height: 35px;
+    width: 35px;
+    /*background-color: #555;*/
+    background-color: green;
+  }
+
+.square1 {
+    float:left;
+    margin-right: 20px;
+    margin-left: 4px;
+    height: 35px;
+    width: 35px;
+    /*background-color: #555;*/
+    background-color: red;
+  }
+
+.square2 {
+  float:left;
+  margin-right: 20vw;
+  margin-left: 4vw;
+  height: 35px;
+  width: 35px;
+  background-color: white;
+}
+
+.the_name{
+  display: block;
+
+}
+
+.assignment_2_header{
+    border-bottom: #d3d3d3 solid 1px;
+}
+.file_header{
+    display: inline;
+    padding-left: 0.7%;
+    padding-right: 20%;
+}
+.file_headings{
+    border-bottom: #d3d3d3 solid 1px;
+}
+.file_names{
+    display: inline-block;
+    padding-top: 0.5%;
+    padding-left: 2%;
+    padding-right: 10vw;
+}
+.file_dates{
+    padding-top:1%;
+    display: inline-block;
+    /*float:right;*/
+}
+.file_information{
+    width:30vw;
+    display:inline-block;
+}
+#todo_list{
+  z-index:2000;
+}
+
+
+
+/* css for our to do slide in stuff 
+#todo_list {
+  margin-top: 5vw;
+  height: 90%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+
+  background-color:white;
+
+  border-left:1px solid #0a0a0a;
+  border-bottom:2px solid #0a0a0a;
+  /*border-radius:21px; 
+}
+  
+  #todo_list li {
+    transition: 0.3s;
+  }
+  
+  @media screen and (max-height: 450px) {
+    #todo_list {padding-top: 15px;}
+  }
+
+  .heading_div{
+    padding-left: 5px;
+    padding-right:5px;
+    padding-bottom: 2%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border:3px solid #0a0a0a;
+    background-color:#00aced; 
+  }
+  .todo_heading{
+
+      border: 1px black;
+  }
+  .closebtn{
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 30px;
+  text-decoration: none !important;
+  color: #0a0a0a;
+
+}
+ .todo_part{
+    padding-top: 5%;
+}
+.todo li{
+    padding-bottom: 5%;
+    padding-left: 1vw !important;  
+}
+
+.todo {
+  list-style: none;
+}
+
+.todo ul{
+  padding-left: 1vw !important;
+}
+
+ css for our to do slide in stuff */
+
+
+.box{
+  width: 2vw;
+  height: 2vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+ 
+.green{
+  width: 2vw;
+  height: 2vw;
+  background: green;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-top: 0.3vw;
+  margin-bottom: 0.3vw;
+}
+
+.red{
+  width: 2vw;
+  height: 2vw;
+  background: red;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-top: 0.3vw;
+  margin-bottom: 0.3vw;
+}

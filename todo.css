@@ -1,0 +1,76 @@
+/* css for our to do slide in stuff */
+#todo_list {
+  margin-top:5.5vw;
+  height: 88%;
+  width: 23vw;
+  position: absolute;
+  z-index: 2000;
+  top: 0;
+  right: 0;
+  position: fixed;
+  /*overflow-x: hidden;*/
+  /*transition: 0.5s;*/
+  background-color: #f1f1f1;
+  border-left: 1px solid #d3d3d3;
+  border-right: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
+
+  /*border-left:1px solid #0a0a0a;
+  border-bottom:2px solid #0a0a0a;*/
+}
+
+/*#todo_list li {
+  transition: 0.3s;
+}*/
+
+@media screen and (max-height: 450px) {
+  #todo_list {padding-top: 15px;}
+}
+
+.heading_div{
+  background-color: #2196F3;
+  padding-left: 5px;
+  padding-right:5px;
+  padding-bottom: 2%;
+  /*border:3px solid #0a0a0a;*/
+  /*background-color:#00aced;*/ 
+  border-top: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
+}
+/*.todo_heading{
+  border: 1px black;  
+  color: #fff;
+}
+*/
+.todo_heading{
+  color: white;
+  margin-top:2%;
+  margin-left: 1%;
+  display: inline-block;
+}
+.closebtn{
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 30px;
+  text-decoration: none !important;
+  color: #0a0a0a;
+
+}
+.todo_part{
+  padding-top: 5%;
+}
+.todo li{
+  padding-bottom: 5%;
+  padding-left: 1vw !important;  
+}
+
+.todo {
+  list-style: none;
+}
+
+.todo ul{
+  padding-left: 1vw !important;
+}
+
+/* css for our to do slide in stuff */

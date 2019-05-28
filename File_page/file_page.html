@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width", initial-scale="1.0">
+<link rel="stylesheet" href="file_page.css">
+<link rel="stylesheet" href="../css/home_page.css">
+<link rel ="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../todo.css">
+<script type="text/javascript" src="assignment 2.js"></script>
+<script src = "file_page.js"></script>
+<body>
+    <div id = "main">
+        <ul class = "ul_tag">
+            <li><a href="../main.html"><img class = "home_icon" src="../home_page_icons/home_icon.svg">Home</a></li>
+            <li><a class="active" href="./file_page.html"><img class = "home_icon" src = "../home_page_icons/file_icon.svg">File</a></li>
+            <li><a href="#upload"><img class = "home_icon" src = "../home_page_icons/upload_icon.svg">Upload</a></li>
+            <li><a href="#ideas"><img class = "home_icon" src = "../home_page_icons/idea_icon.svg">Ideas</a></li>
+            <li><a href="#chat"><img class = "home_icon" src = "../home_page_icons/chat_icon.svg">Chat</a></li>
+            <li><a href="#expectations"><img class = "home_icon" src = "../home_page_icons/expectations_icon.svg">Expectations</a></li>
+            <li><a href="../calender/compsci 361 caldendar page.html"><img class = "home_icon" src = "../home_page_icons/calendar_icon.svg">Calendar</a></li>
+            <li><a class="active" href="#todo" onclick ="openNav()"><img class = "home_icon" src = "../home_page_icons/todo_icon.svg">To Do</a></li>
+        </ul>
+        <div class = the_overall_div>
+            <div class = "left_section">
+                <h2>Files</h2>
+            </div> 
+            <div class = people_assignment_1>
+                <div>
+                    <h3 class = "assignment_heading">Lo Fi Prototype</h3>
+                </div>
+
+            <table>
+                
+                
+                <tr><td><div class="box red"></div><td><td style="text-align: left">Adam<br><p></p></td></tr>
+                <tr><td><div class="box red"></div><td><td style="text-align: left">Eric<br><p></p></td></tr>
+                <tr><td><div class="box green"></div><td><td style="text-align: left">Mathew<br>Uploaded - 15th March</td></tr>
+            </table>
+
+
+
+
+
+                <!-- <div class="square1"></div>
+                <h3 class= "the_name">Adam</h3>
+                <div class="square1"></div>
+                <h3 class= "the_name">Eric</h3>
+                <div class="square"></div>
+                <h3 class= "the_name">Mathew</h3>
+                <div class = 'square2'></div>
+                <div><h6>Last uploaded 15 May</h4></div> -->
+            </div>
+            <div class = people_assignment_2>
+                <div>
+                    <h3 class = "assignment_heading">Hi Fi Prototype</h3>
+                </div>
+
+            <table>
+                <tr><td><div class="box green"></div><td><td style="text-align: left">Martin<br>Uploaded - 11th March</td></tr>
+                <tr><td><div class="box green"></div><td><td style="text-align: left">Ryan<br>Uploaded - 10th March</td></tr>
+            </table>
+
+               <!--  <div class="square"></div>
+                <h3 class= "the_name">Martin</h3>
+                <div class="square"></div>
+                <h3 class= "the_name">Ryan</h3> -->
+            </div>
+
+        </div>
+
+        <div class = "right_div">
+            <div>
+                <h2 class = "assignment_2_header">Lo-Fi --> Mathew</h2>
+            </div>
+            <div class = "file_headings">
+                <h4 class = "file_header">Name</h4>
+                <h4 class = "file_header">Date</h4>
+            </div>
+            <div class = "file_information">
+                <div class = "file_names">
+                    <h6>1.png</h6>
+                    <h6>2.png</h6>
+                    <h6>3.png</h6>
+                    <h6>A2.html</h6>
+                </div>
+                <div class= "file_dates">
+                    <h6>05/05/19</h6>
+                    <h6>07/05/19</h6>
+                    <h6>08/05/19</h6>
+                    <h6>15/05/19</h6>
+                </div>
+            </div>
+
+        </div>    
+
+
+    </div>
+
+<div id = "todo_list">
+  <div class = "heading_div">
+    <h4 class = "todo_heading" href =#todopage>To Do</h4>
+  </div>
+  <div class = "todo_part">
+    <ul class = "todo">
+     <li>
+      <input style="width:12.8px" type="checkbox">
+      Meeting 10 May at 2:00PM
+    </li>
+    <li>
+      <input style="width:12.8px" type="checkbox">
+      Finish lofi 20 December at 5:30PM
+    </li>
+    <li>
+      <input style="width:12.8px" type="checkbox">
+      Finish hifi 4 September at 4:00PM
+    </li>
+    <li>
+      <input style="width:12.8px" type="checkbox">
+      Submit A2 11 December at 8:00PM
+    </li>
+    <li>
+      <input style="width:12.8px" type="checkbox">
+      Meeting 3 December at 2:00PM
+    </li>
+  </ul>
+</div>
+
+</div>
+
+
+
+<!-- <div id = "todo_list">
+  <div class = "heading_div">
+    <h4><a class = "todo_heading" href =#todopage>To Do</a></h4>
+  </div>
+  <div class = "todo_part">
+    <ul style="padding-left:3vw; padding-top:1vw;" class = "todo">
+     <li>
+       <input style="width:12.8px" type="checkbox"> 2pm: Meeting
+     </li>
+     <li>
+       <input style="width:12.8px" type="checkbox"> Finish lofi
+     </li>
+     <li>
+       <input style="width:12.8px" type="checkbox"> Finish hifi
+     </li>
+     <li>
+      <input style="width:12.8px" type="checkbox"> 8pm: Submit A2
+    </li>
+    <li>
+      <input style="width:12.8px" type="checkbox"> 2pm: Meeting
+    </li>
+  </ul>
+</div>
+
+</div> -->
+
+<!-- <div id = "todo_list">
+  <div class = "heading_div">
+    <h4 class = "todo_heading" href =#todopage>To Do</h4>
+  </div>
+  <div class = "todo_part">
+    <ul class = "todo">
+     <li>
+      <input style="width:12.8px" type="checkbox">
+      Meeting 10 May at 2:00PM
+    </li>
+    <li>
+      <input style="width:12.8px" type="checkbox">
+      Finish lofi 20 December at 5:30PM
+    </li>
+    <li>
+      <input style="width:12.8px" type="checkbox">
+      Finish hifi 4 September at 4:00PM
+    </li>
+    <li>
+      <input style="width:12.8px" type="checkbox">
+      Submit A2 11 December at 8:00PM
+    </li>
+    <li>
+      <input style="width:12.8px" type="checkbox">
+      Meeting 3 December at 2:00PM
+    </li>
+  </ul>
+</div>
+
+</div> -->
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+
+</script>
+
+</body>
+</html>

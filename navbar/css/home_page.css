@@ -1,0 +1,77 @@
+/*THE BELLLOW IS CSS FOR THE NAV BAR*/
+.ul_tag {
+    list-style-type: none;
+    /*margin-top: 0;*/
+    /*padding: 0;*/
+    overflow: hidden;
+    background-color: #00aced;
+    width:100%;
+    text-align: center;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+  }
+
+  .fixed {
+    position: fixed !important;
+    top: 0 !important;
+}
+
+  
+  .ul_tag li {
+    float: left;
+    display: block;
+    font-size:20px;
+    width: 12.5%;
+  }
+  
+  .ul_tag  li a {
+
+
+    text-decoration: none;
+    padding-top: 0;
+    margin-top: 0;
+    /* padding: .2em 1em; */
+    color: white;
+    text-align: center;
+    display: block;
+  }
+  
+.ul_tag  li a:hover {
+    background-color: #111;
+  }
+/* THE ABOVE IS CSS FOR NAV BAR*/
+
+
+/*BELLOW IS CSS FOR THE ENTIRE WEBPAGE*/
+  body {
+    font-family: Arial;
+    background: #f1f1f1;
+  }
+/*ABOVE IS CSS FOR ENTIRE WEBPAGE*/
+
+
+ .row{
+    float: left;
+    width: 75%;
+}
+ .row ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    background-color: white;
+  }
+
+  /*Bellow is css for the icons in the nav bar*/
+  .home_icon{
+      width:25%;
+      height:20%;
+      padding: 0;
+      display: block;
+      justify-content: center;
+      margin: auto;
+  }
+  .images ul{
+    list-style-type: none;
+  }
+    /*above is css for the icons in the nav bar*/

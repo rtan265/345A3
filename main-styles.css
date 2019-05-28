@@ -1,0 +1,184 @@
+i {
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  margin-top: 1vw;
+  font-size: 5.5vw;
+}
+
+#chat {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  text-align: center;
+  border: 1px solid #d3d3d3;
+  width: 48%;
+  height: 40%;
+  overflow-y: auto
+}
+
+#messages {
+  z-index: 10;
+  background-color: #f1f1f1;
+  border: 1px solid #d3d3d3;
+  height:60%;
+  overflow-y: auto;
+  text-align: left;
+  width: 100%;
+  height: 59.9%;
+}
+
+#sendmessage {
+  padding: 10px;
+  z-index: 10;
+  background-color: #f1f1f1;
+  border: 1px solid #d3d3d3;
+  height:17%;
+}
+
+#chatheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #2196F3;
+  color: #fff;
+}
+
+#chatheader:hover {
+  opacity: 0.8;
+}
+
+#files {
+  position: absolute;
+  z-index: 10;
+  background-color: #f1f1f1;
+  text-align: center;
+  border: 1px solid #d3d3d3;
+  width: 23%;
+  height: 40%;
+  overflow-y: auto
+}
+
+#filesheader:hover {
+  opacity: 0.8;
+}
+
+#filesheader {
+  padding: 11px;
+  cursor: move;
+  z-index: 10;
+  background-color: #2196F3;
+  color: #fff;
+}
+
+#ideas {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  text-align: center;
+  border: 1px solid #d3d3d3;
+  width: 23%;
+  height: 40%;
+  overflow-y: auto
+}
+
+#ideasheader{
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #2196F3;
+  color: #fff;
+}
+
+#ideasheader:hover {
+  opacity: 0.8;
+}
+
+
+#calendar {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  text-align: center;
+  border: 1px solid #d3d3d3;
+  width: 23%;
+  height: 40%;
+  overflow-y: auto;
+}
+
+
+#calendarheader{
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #2196F3;
+  color: #fff;
+}
+
+#calendarheader:hover {
+  opacity: 0.8;
+}
+
+#uploads {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  text-align: center;
+  border: 1px solid #d3d3d3;
+  width: 23%;
+  height: 40%;
+  overflow-y: auto;
+}
+
+#uploadsheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #2196F3;
+  color: #fff;
+}
+
+#uploadsheader:hover {
+  opacity: 0.8;
+}
+
+span.foldername {
+  display: block;
+  font-size: 1vw;
+}
+
+.idea {
+  border-style: solid;
+  width: 90%;
+  height: 4vw;
+  margin-left: 1vw;
+  margin-top: 1vw;
+}
+
+.schedule {
+  border-style: solid;
+  width: 100%;
+  height: 3vw;
+  padding-top:0.5vw;
+}
+
+.box{
+  width: 2vw;
+  height: 2vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+ 
+.green{
+  background: green;
+}
+
+.red{
+  background: red;
+}
+
+.selectfolder:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
