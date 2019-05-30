@@ -24,20 +24,35 @@
         <li><a href="#todo" onclick ="openNav()"><img class = "home_icon" src = "../home_page_icons/todo_icon.svg">To Do</a></li>
 	</ul>
 
+<!--<div class = sqaure>
+<form class = "upload_form">
+    <input id="file-upload" type="file" required />
+    <label class = "upload_label" for="file-upload">Press here to upload a file</label>
+    <div id="file-upload-filename"></div>-->
+    <!-- <button class = "submit_button"  onClick="location.href = '../File_page/file_page.html'">Submit</button> -->
+    <!-- <input type="submit" class = "submit_button"  onClick="location.href = '../File_page/file_page.html'"> -->
+    <!-- <input type ="submit" class = "submit_button" onClick = pushed_submit()> -->
+    <!-- <button type="submit" class = "submit_button"  onClick="location.href = '../File_page/file_page.html'"> Submit </button> -->
+<!-- </form> -->
+
+<!-- </div> -->
 <div class = sqaure>
 <form>
-    <input type="file" id="file-upload" multiple required />
-    <label class = "upload_label" for="file-upload">Press here to upload a file</label>
-    <div id="file-upload-filename"></div>
-</form>
-
+    <label>
+        Click here to open the file
+        <input onchange="uploaded_file()" id = "theFile" type="file" style="position: fixed; top: -100em">
+    </label>
+    <input type="button" value = "Submit" onclick="pushed_submit()">
+  </form>
+  <div id = "show_file_name"></div>
 </div>
 
 
 
 
 
-<div id = "todo_list">
+
+<!-- <div id = "todo_list">
 <div class = "heading_div">
     <h4><a class = "todo_heading" href =#todopage>To Do</a></h4>
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -61,7 +76,7 @@
         </li>
     </ul>
 </div> 
-</div>
+</div> -->
 
 </body>
 </html>

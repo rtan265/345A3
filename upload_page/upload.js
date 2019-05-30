@@ -1,16 +1,16 @@
-var input = document.getElementById( 'file-upload' );
-var infoArea = document.getElementById( 'file-upload-filename' );
+function uploaded_file(){
+  
+var fileName = document.getElementById('theFile').files[0].name;
+document.getElementById("show_file_name").innerHTML = fileName;
+document.getElementById("show_file_name").style.display = "block";
+}
+function pushed_submit(){
+  var file = document.getElementById("show_file_name").innerHTML;
+  if(file !== ""){
+    window.location.href="../File_page_uploaded_a_file/file_page.html";
+  }
+  else{
+    alert("You have not selected a file");
+  }
 
-input.addEventListener( 'change', showFileName );
-
-function showFileName( event ) {
-  
-  // the change event gives us the input it occurred in 
-  var input = event.srcElement;
-  
-  // the input has an array of files in the `files` property, each one has a name that you can use. We're just using the name here.
-  var fileName = input.files[0].name;
-  
-  // use fileName however fits your app best, i.e. add it into a div
-  infoArea.textContent = 'File name: ' + fileName;
 }
